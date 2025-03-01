@@ -16,12 +16,12 @@ products.forEach((product) => {
                 <img class="product-rating-stars"
                 src="images/ratings/rating-${product.rating.stars * 10}.png">
                 <div class="product-rating-count link-primary">
-                ${product.rating.reviews} reviews
+                ${product.rating.count} reviews
                 </div>
             </div>
 
             <div class="product-price">
-                $${product.PriceCents / 100}
+                $${product.priceCents / 100}
             </div>
 
             <div class="product-quantity-container">
@@ -46,7 +46,7 @@ products.forEach((product) => {
                 Added
             </div>
 
-            <button class="add-to-cart-button button-primary">
+            <button class="add-to-cart-button button-primary js-add2cart">
                 Add to Cart
             </button>
             </div>`;
