@@ -35,3 +35,15 @@ export function updateCartQuantity() {
 
         document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 }
+
+export function removeFromCart(productId) {
+    const newCart = [];
+    
+    cart.forEach((item) => {
+        if (item.productId !== productId) {
+            newCart.push(item);
+        }
+    });
+
+    cart = newCart;
+}
